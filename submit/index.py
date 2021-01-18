@@ -335,8 +335,8 @@ def main_handler(event, context):
                                  params['schoolTaskWid'], form, session, apis['host'])
                 if msg == 'SUCCESS':
                     log('自动提交成功！')
-                    sendServerChan('🎉自动提交成功！o(*≧▽≦)ツ', user['user']['email'])
-                    sendQmsgChan('🎉自动提交成功！o(*≧▽≦)ツ', user['user']['email'])
+                    sendServerChan('🎉自动提交成功！o(*≧▽≦)ツ')
+                    sendQmsgChan('🎉自动提交成功！o(*≧▽≦)ツ')
                 elif msg == '该收集已填写无需再次填写':
                     log('今日已提交！')
                     sendServerChan('🤔今日已提交！')
